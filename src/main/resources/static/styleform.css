@@ -1,0 +1,69 @@
+.form1{
+    background-image: url('https://us.123rf.com/450wm/melpomen/melpomen1810/melpomen181001569/109921691-one-hanging-light-bulb-on-a-yellow-background.jpg?ver=6');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    outline: 2px solid #000;
+    border-radius: 10px;
+}
+.choose{
+    display: flex;
+    align-items: stretch;
+    align-content: space-around;
+}
+
+.choose-university {
+    zoom: 1.12;
+    padding-top: 15px;
+    padding-left: 15px;
+    flex: 1 1 0;
+
+}
+.choose-criterion {
+    zoom: 1.12;
+    padding-top: 15px;
+    padding-left: 15px;
+    flex: 1 1 0;
+}
+.get-result-button {
+    zoom: 1.5;
+    margin-top: 15px;
+    padding-left: 35px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background: #384455;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background: #384455;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
