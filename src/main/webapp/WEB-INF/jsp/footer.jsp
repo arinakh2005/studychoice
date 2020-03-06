@@ -1,3 +1,4 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <footer class="site-footer" id="colophon" role="contentinfo" itemtype="https://schema.org/WPFooter" itemscope="itemscope">
 
 

@@ -48,7 +48,7 @@ flexibility(document.documentElement);
     <script src="<c:url value='/wp/jquery-migrate.js'/>"></script>
     <script src="<c:url value='/wp/v4-shims.min.js'/>"></script>
     <script src="<c:url value='/wp/admin-bar.js'/>"></script>
-    <link rel='https://api.w.org/' href="<c:url value='/wp/v4-shims.min.js'/>">'http://localhost/wordpress/wp-json/' />
+    <link rel='https://api.w.org/' href="<c:url value='/wp/v4-shims.min.js'/>">
     <link rel="EditURI" type="application/rsd+xml" title="RSD" href="<c:url value='/wp/xmlrpc.php'/>"/>
     <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="<c:url value='/wp/wlwmanifest.xml'/>"/>
     <meta name="generator" content="WordPress 5.3" />

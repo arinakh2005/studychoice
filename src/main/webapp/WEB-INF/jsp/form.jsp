@@ -13,14 +13,12 @@
 <%--        </div>--%>
         <div id="form1" class="form1">
             <div class="choose-city">
-                <div class="container-fluid">
-                <p class ="modal-content"><h3>Вкажіть місто, в якому ви мешкаєте</h3></p>
+                <p><h3>Вкажіть місто, в якому ви мешкаєте</h3></p>
                 <select class="custom-select-lg" data-style="btn-secondary">
-                    <c:forgitEach var="city" items="${cities}">
+                    <c:forEach var="city" items="${cities}">
                         <option class="list-group-item-success" value="${city.id}">${city.name}</option>
-                    </c:forgit iniEach>
+                    </c:forEach>
                 </select>
-                </div>
             </div>
             <div id='all-choices-container' class="choose">
             <div class="choose-university">
