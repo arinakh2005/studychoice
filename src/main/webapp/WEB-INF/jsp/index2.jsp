@@ -66,6 +66,8 @@ flexibility(document.documentElement);
         <header class="site-header header-main-layout-1 ast-primary-menu-enabled ast-menu-toggle-icon ast-mobile-header-inline" id="masthead" role="banner" itemtype="https://schema.org/WPHeader" itemscope="itemscope">
         </header>
         <%@include file="content.jsp"%>
+<%--        <script> let element = document.getElementById("form1");--%>
+<%--        element.scrollIntoView({block: "end", inline: "nearest"});</script>--%>
         <%@include file="footer.jsp"%>
     </div>
 

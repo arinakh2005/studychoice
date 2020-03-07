@@ -57,8 +57,8 @@
                                             <div class="elementor-element elementor-element-ff46ccd elementor-align-right elementor-mobile-align-center elementor-widget elementor-widget-button" data-id="ff46ccd" data-element_type="widget" data-widget_type="button.default">
                                                 <div class="elementor-widget-container">
                                                     <div class="elementor-button-wrapper">
-                                                        <a href="#" onclick="insertChooseSection()" class="elementor-button-link elementor-button elementor-size-lg elementor-animation-grow" role="button">
-                                                                    <span class="elementor-button-content-wrapper">
+                                                        <a href="#" onclick="scrollTo(100,100), insertChooseSection()"  class="elementor-button-link elementor-button elementor-size-lg elementor-animation-grow" role="button">
+                                                        <span class="elementor-button-content-wrapper">
 						<span class="elementor-button-text">Обрати</span>
                                                                     </span>
                                                         </a>
