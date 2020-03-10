@@ -1,17 +1,23 @@
 package ua.edu.chdtu.fitis.studychoice.controller;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import ua.edu.chdtu.fitis.studychoice.entity.City;
 import ua.edu.chdtu.fitis.studychoice.entity.Criteria;
+import ua.edu.chdtu.fitis.studychoice.entity.CriterionComparison;
+import ua.edu.chdtu.fitis.studychoice.service.CriterionComparisonService;
 
 import java.util.ArrayList;
 import java.util.List;
 
 @RestController
 public class MainController {
+    @Autowired
+    CriterionComparisonService criterionComparisonService;
+
     @GetMapping("/city")
     public ResponseEntity getCity() {
         List<City> cities = new ArrayList<>();
@@ -39,4 +45,12 @@ public class MainController {
         return ResponseEntity.ok(criterions);
     }
 
+    @GetMapping("/criteria-comparison")
+    public ResponseEntity getCriteriaComparison() {
+        int[] criteriaIds = {1, 2};
+        int[] universityIds = {1, 2, 3};
+        List<CriterionComparison> criteriaComparisons =
+                criterionComparisonService.getCriteriaComparisonsDB(criteriaIds, universityIds);
+        return ResponseEntity.ok(criteriaComparisons);
+    }
 }

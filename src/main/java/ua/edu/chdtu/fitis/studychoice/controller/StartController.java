@@ -5,13 +5,13 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 import ua.edu.chdtu.fitis.studychoice.entity.City;
 import ua.edu.chdtu.fitis.studychoice.entity.Criteria;
 import ua.edu.chdtu.fitis.studychoice.entity.University;
 import ua.edu.chdtu.fitis.studychoice.service.CityService;
 import ua.edu.chdtu.fitis.studychoice.service.CriteriaService;
+import ua.edu.chdtu.fitis.studychoice.service.CriterionComparisonService;
 import ua.edu.chdtu.fitis.studychoice.service.UniversityService;
 
 import java.util.List;
@@ -24,6 +24,8 @@ public class StartController {
     private CityService cityService;
     @Autowired
     private CriteriaService criteriaService;
+    @Autowired
+    private CriterionComparisonService criterionComparisonDTOService;
 
     public StartController(CriteriaService criteriaService) {
         this.criteriaService = criteriaService;

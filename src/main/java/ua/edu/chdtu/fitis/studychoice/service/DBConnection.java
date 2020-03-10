@@ -7,7 +7,7 @@ import java.sql.SQLException;
 public class DBConnection {
     private static Connection connection;
     static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";
-    static final String DB_URL = "jdbc:mysql://localhost/site";
+    static final String DB_URL = "jdbc:mysql://localhost/studychoice";
 
     //  Database credentials
     static final String USER = "root";
