@@ -1,12 +1,12 @@
 package ua.edu.chdtu.fitis.studychoice.controller;
 
 public class CriterionComparisonDTO {
-    private int data[][][];
+    private double data[][][];
 
-    public int[][][] getData() {
+    public double[][][] getData() {
         return data;
     }
-    public void setData(int[][][] data) {
+    public void setData(double[][][] data) {
         this.data = data;
     }
 

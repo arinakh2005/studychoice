@@ -51,6 +51,9 @@ public class MainController {
         int[] universityIds = {1, 2, 3};
         List<CriterionComparison> criteriaComparisons =
                 criterionComparisonService.getCriteriaComparisonsDB(criteriaIds, universityIds);
-        return ResponseEntity.ok(criteriaComparisons);
+        CriterionComparisonDTO criterionComparisonDTO = new CriterionComparisonDTO();
+        double data[][][] = criterionComparisonService.buildCriteriaComparisonArrays(criteriaComparisons, criteriaIds, universityIds);
+        criterionComparisonDTO.setData(data);
+        return ResponseEntity.ok(criterionComparisonDTO);
     }
 }
