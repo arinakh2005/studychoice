@@ -45,7 +45,7 @@ function doComparison() {
                 alert('ERROR!');
         }
     };
-    let url = '/send';
+    let url = '/criteria-comparison';
     let info = {
         universities: [],
         criteria: [],
@@ -53,21 +53,19 @@ function doComparison() {
     };
     let univesitiesCheckBoxes = document.querySelectorAll('input.university:checked');
     for (let universityCheckBox of univesitiesCheckBoxes) {
-        info.universities.push(universityCheckBox.parentNode.innerText);
+        info.universities.push(universityCheckBox.value);
     }
     let criteriaCheckBoxes = document.querySelectorAll('input.criteria:checked');
     for (let criteriaCheckBox of criteriaCheckBoxes) {
-        info.criteria.push(criteriaCheckBox.parentNode.innerText);
+        info.criteria.push(criteriaCheckBox.value);
     }
-    let coefficientComboBoxes = document.querySelectorAll('.coefficients');
-    for (let coefficientComboBox of coefficientComboBoxes) {
-        let n = convertCoefficientStrToNumber(coefficientComboBox.value);
-        info.coefficients.push(n);
-    }
-    let infoJson = JSON.stringify(info);
-    xhr.open('POST', url, true);
-    xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
-    xhr.send(infoJson);
+    // let coefficientComboBoxes = document.querySelectorAll('.coefficients');
+    // for (let coefficientComboBox of coefficientComboBoxes) {
+    //     let n = convertCoefficientStrToNumber(coefficientComboBox.value);
+    //     info.coefficients.push(n);
+    // }
+    xhr.open('GET', url+'?criteriaIds='+info.criteria+'&universityIds='+info.universities, true);
+    xhr.send();
 }
 
 function convertCoefficientStrToNumber(coefficientStr) {
