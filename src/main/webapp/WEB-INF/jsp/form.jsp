@@ -12,13 +12,16 @@
 <%--            <input type="text" size="40"></p>--%>
 <%--        </div>--%>
         <div id="form1" class="form1">
-            <div class="choose-city">
-                <p><h3>Вкажіть місто, в якому ви мешкаєте</h3></p>
-                <select class="custom-select-lg" data-style="btn-secondary">
-                    <c:forEach var="city" items="${cities}">
-                        <option class="list-group-item-success" value="${city.id}">${city.name}</option>
-                    </c:forEach>
-                </select>
+            <div class="choose">
+                <div class="choose-city">
+                    <p><h3>Вкажіть місто, в якому ви мешкаєте</h3></p>
+                    <select class="custom-select-lg" data-style="btn-secondary">
+                        <c:forEach var="city" items="${cities}">
+                            <option class="list-group-item-success" value="${city.id}">${city.name}</option>
+                        </c:forEach>
+                    </select>
+                </div>
+                <div class="choose-city"><a href="#" onclick="showAlternativeComparisonPromptModal()"><h4>Як порівнювати альтернативи</h4></a></div>
             </div>
             <div id='all-choices-container' class="choose">
             <div class="choose-university">
@@ -34,7 +37,8 @@
             </div>
         </div>
     <%--</div>--%>
-    <div id="comparison"></div>
+            <div id="comparison"></div>
+
             <p><button class='get-result-button' onclick="doComparison()">Отримати результат</button></p>
 
 <!-- The Modal -->
@@ -46,6 +50,15 @@
         <p id="totalResult">Some text in the Modal..</p>
     </div>
 </div>
-        </div>
+<div id="criteriaPromptModal" class="modal">
+    <div class="container p-3 my-3 alert alert-success">
+        <span class="close">&times;</span>
+        <p>1 - однакова важливість</p>
+        <p>3 - перший критерій трохи важливіший за другий</p>
+        <p>5 - перший критерій має суттєву перевагу над другим</p>
+        <p>7 - перший критерій має значну перевагу над другим</p>
+        <p>9 - перший критерій має абсолютну перевагу над другим</p>
+    </div>
+</div>
 
 

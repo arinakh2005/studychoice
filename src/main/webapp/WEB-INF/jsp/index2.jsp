@@ -10,6 +10,7 @@
 
     <title>Куди піти навчатись</title>
     <script src="studychoice.js"></script>
+    <script src="show.js"></script>
     <link rel='dns-prefetch' href='//fonts.googleapis.com' />
     <link rel='dns-prefetch' href='//s.w.org' />
     <link rel="alternate" type="application/rss+xml" title="Куди піти навчатись &raquo; Лента" href="http://localhost/wordpress/feed/" />

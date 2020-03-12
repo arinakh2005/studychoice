@@ -11,13 +11,17 @@
     align-items: stretch;
     align-content: space-around;
 }
+.choose-city {
+    padding-top: 15px;
+    padding-left: 15px;
+    flex: 1 1 1;
+}
 
 .choose-university {
     zoom: 1.12;
     padding-top: 15px;
     padding-left: 15px;
     flex: 1 1 0;
-
 }
 .choose-criterion {
     zoom: 1.12;
