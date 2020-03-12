@@ -1,11 +1,9 @@
 function showAlternativeComparisonPromptModal() {
     let modal = document.getElementById("criteriaPromptModal");
 // Get the button that opens the modal
-    let btn = document.getElementsByClassName("get-result-button")[0];
-// Get the <span> element that closes the modal
-    let span = document.getElementsByClassName("close")[0];
+    let span = document.getElementsByClassName("close")[1];
 // When the user clicks on the button, open the modal
-        modal.style.display = "block";
+    modal.style.display = "block";
 
 // When the user clicks on <span> (x), close the modal
     span.onclick = function() {

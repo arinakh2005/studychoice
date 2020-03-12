@@ -51,7 +51,7 @@
     </div>
 </div>
 <div id="criteriaPromptModal" class="modal">
-    <div class="container p-3 my-3 alert alert-success">
+    <div class="modal-content ">
         <span class="close">&times;</span>
         <p>1 - однакова важливість</p>
         <p>3 - перший критерій трохи важливіший за другий</p>
