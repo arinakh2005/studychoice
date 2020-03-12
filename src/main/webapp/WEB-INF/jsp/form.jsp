@@ -43,11 +43,41 @@
 
 <!-- The Modal -->
 <div id="myModal" class="modal">
-
     <!-- Modal content -->
     <div class="modal-content">
         <span class="close">&times;</span>
-        <p id="totalResult">Some text in the Modal..</p>
+        <div class="last-step">
+            <div style="">
+                <h3 class="block-title block-title-no-margin text-center">Вибір ЗВО для вступу: Результат</h3>
+                <br><br>
+                <div class="row">
+                    <div class="col-lg-8 col-md-9 col-sm-10">
+                        <div class="table-responsive space-bottom-1x">
+                            <table class="table-responsive" id="table-result">
+                                <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Альтернативи</th>
+                                    <th>Вага</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr id="result_row_0">
+                                    <th scope="row" class="w-10">1</th>
+                                    <td class="td-no-padding w-75">
+                                        <input value="" readonly="" required="" class="form-control input-no-margin">
+                                    </td>
+                                    <td class="td-no-padding w-15">
+                                        <input name="result_weights_0" value="" readonly="" required="" class="form-control input-no-margin text-center">
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 <div id="criteriaPromptModal" class="modal">

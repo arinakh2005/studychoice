@@ -47,8 +47,6 @@ public class MainController {
 
     @GetMapping("/criteria-comparison")
     public ResponseEntity getCriteriaComparison(@RequestParam int[] criteriaIds, @RequestParam int[] universityIds) {
-//        int[] criteriaIds = {1, 2};
-//        int[] universityIds = {1, 2, 3};
         List<CriterionComparison> criteriaComparisons =
                 criterionComparisonService.getCriteriaComparisonsDB(criteriaIds, universityIds);
         CriterionComparisonDTO criterionComparisonDTO = new CriterionComparisonDTO();
